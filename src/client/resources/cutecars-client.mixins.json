@@ -3,6 +3,7 @@
 	"package": "io.github.cutecarsmc.mixins",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
+		"MixinMinecraft"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -7,7 +7,7 @@ public final class CuteCars {
     public static final String VERSION = "@VERSION@";
     public static final String COMMIT_HASH = "@COMMIT_HASH@";
 
-    public static Identifier identifier(final String path) {
+    public static Identifier withPath(final String path) {
         return Identifier.fromNamespaceAndPath(MOD_ID, path);
     }
 }

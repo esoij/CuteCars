@@ -62,7 +62,16 @@ java {
     withSourcesJar()
 }
 
-extensions.configure<LoomGradleExtensionAPI> {
+loom {
+    splitEnvironmentSourceSets()
+
+    mods {
+        register(mod.id) {
+            sourceSet(sourceSets.main.get())
+            sourceSet(sourceSets.getByName("client"))
+        }
+    }
+
     runConfigs.all {
         ideConfigGenerated(stonecutter.current.isActive)
         runDir = "../../run"
@@ -80,6 +89,12 @@ extensions.configure<LoomGradleExtensionAPI> {
                 property("devauth.account", "main")
             }
         }
+    }
+}
+
+fabricApi {
+    configureDataGeneration {
+        client = true
     }
 }
 

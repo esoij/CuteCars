@@ -36,4 +36,4 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Stonecutter Template"
+rootProject.name = "CuteCars"
