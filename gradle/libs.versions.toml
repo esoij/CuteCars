@@ -10,7 +10,6 @@ spotless = "8.2.1"
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-jvm" }
 loom = { id = "net.fabricmc.fabric-loom", version.ref = "loom" }
-loom-remap = { id = "net.fabricmc.fabric-loom-remap", version.ref = "loom" }
 publishing = { id = "me.modmuss50.mod-publish-plugin", version.ref = "publishing" }
 blossom = { id = "net.kyori.blossom", version.ref = "blossom" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
