@@ -5,7 +5,10 @@
 	"name": "${name}",
 	"description": "${description}",
 	"authors": [
-		"lowercasebtw"
+		"lowercasebtw",
+		"p1k0chu",
+		"auri-f5bde6",
+		"esoij"
 	],
 	"contact": {
 		"sources": "${source}",
