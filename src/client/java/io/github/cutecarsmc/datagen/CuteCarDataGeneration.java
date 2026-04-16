@@ -5,9 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
 @Entrypoint("fabric-datagen")
-public class CuteCarDataGeneration implements DataGeneratorEntrypoint {
+public final class CuteCarDataGeneration implements DataGeneratorEntrypoint {
     @Override
-    public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
-
+    public void onInitializeDataGenerator(final FabricDataGenerator generator) {
     }
 }
