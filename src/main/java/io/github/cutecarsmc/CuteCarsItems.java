@@ -47,9 +47,9 @@ public class CuteCarsItems {
 
     private static Item registerBlock(final Block block, final BiFunction<Block, Item.Properties, Item> itemFactory, final Item.Properties properties) {
         return registerItem(
-                ResourceKey.create(Registries.ITEM, block.builtInRegistryHolder().key().identifier()),
-                p -> itemFactory.apply(block, p),
-                properties.useBlockDescriptionPrefix().requiredFeatures(block.requiredFeatures())
+            ResourceKey.create(Registries.ITEM, block.builtInRegistryHolder().key().identifier()),
+            p -> itemFactory.apply(block, p),
+            properties.useBlockDescriptionPrefix().requiredFeatures(block.requiredFeatures())
         );
     }
 

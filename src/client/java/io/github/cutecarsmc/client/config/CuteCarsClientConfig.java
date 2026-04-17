@@ -30,10 +30,10 @@ import org.jetbrains.annotations.Nullable;
 
 public final class CuteCarsClientConfig {
     private static final ConfigClassHandler<CuteCarsClientConfig> CONFIG = ConfigClassHandler.createBuilder(CuteCarsClientConfig.class)
-            .serializer((config) -> GsonConfigSerializerBuilder.create(config)
-                    .setPath(YACLPlatform.getConfigDir().resolve(CuteCars.MOD_ID + "_client.json"))
-                    .build()
-            ).build();
+        .serializer((config) -> GsonConfigSerializerBuilder.create(config)
+            .setPath(YACLPlatform.getConfigDir().resolve(CuteCars.MOD_ID + "_client.json"))
+            .build()
+        ).build();
 
     // TODO: Add fields here (annotate with SerialEntry)
 

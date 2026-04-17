@@ -29,10 +29,10 @@ import io.github.cutecarsmc.CuteCars;
 
 public final class CuteCarsServerConfig {
     private static final ConfigClassHandler<CuteCarsServerConfig> CONFIG = ConfigClassHandler.createBuilder(CuteCarsServerConfig.class)
-            .serializer((config) -> GsonConfigSerializerBuilder.create(config)
-                    .setPath(YACLPlatform.getConfigDir().resolve(CuteCars.MOD_ID + "_server.json"))
-                    .build()
-            ).build();
+        .serializer((config) -> GsonConfigSerializerBuilder.create(config)
+            .setPath(YACLPlatform.getConfigDir().resolve(CuteCars.MOD_ID + "_server.json"))
+            .build()
+        ).build();
 
     // TODO: Add fields here (annotate with SerialEntry)
     @SerialEntry
